@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#2F8FDB"
+            android:textSize="48sp"
+            android:textStyle="bold|italic"
+            app:fontFamily="serif"
+            tools:text="Обед!!!!" />
+
+    <TextView
+        android:id="@+id/clockTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerTextView"
+        android:layout_marginTop="0dp"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="HH:MM:SS" />
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerTextView"
+        android:layout_marginTop="0dp"
+        android:gravity="end"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="DD/MM/YYYY" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/clockTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:keepScreenOn="false"
+        android:soundEffectsEnabled="false"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+</RelativeLayout>
